@@ -1,9 +1,30 @@
-h1 {
+.title {
+  display: flex;
+ justify-content: center;
+}
 
+.keys {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
 }
 
 .key {
+  text-align: center;
   height: 55px;
   width: 55px;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 10px;
+
+}
+
+kbd {
+  display: block;
+  font-size: 25px;
+  padding-top: 4px;
+}
+
+.sound {
+  font-size: 8px;
 }
