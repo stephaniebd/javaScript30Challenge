@@ -1,6 +1,8 @@
 .title {
   display: flex;
- justify-content: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
 }
 
 .keys {
@@ -16,7 +18,13 @@
   border: 2px solid black;
   border-radius: 4px;
   margin: 10px;
+  transition: .07s;
+}
 
+.playing {
+  transform: scale(1.2);
+  border-color: #4af2a1;
+  box-shadow: 0 0 10px #4af2a1;
 }
 
 kbd {
@@ -27,4 +35,6 @@ kbd {
 
 .sound {
   font-size: 8px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
