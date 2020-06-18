@@ -6,11 +6,26 @@ body {
   font-weight: 100;
   font-size: 50px;
 }
-
 .controls {
   margin-bottom: 50px;
 }
 
 input {
   width: 100px;
+}
+
+:root {
+  --base: #8e4089;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base);
 }
