@@ -43,12 +43,10 @@
       }
 
       function toggleActive(e) {
-        if(e.propertyName.includes('flex')) {
+        if(e.propertyName.includes('flex')) { // .includes because Safari and Chrome event.propertyName is not the same.
           this.classList.toggle('open-active');
         }
       }
-
-
 
       panels.forEach(panel => panel.addEventListener('click',toggleOpen));
       panels.forEach(panel => panel.addEventListener('transitionend',toggleActive));
